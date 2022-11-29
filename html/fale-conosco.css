@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+:root {
+
+    --cor0: #0D0D0D;
+    --cor1: #262626;
+    --cor2: #595959;
+    --cor3: #A6A6A6;
+    --cor4: #F2F2F2;
+
+    --fonte-padrao: Arial, Verdana,Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue',cursive;
+    --font-android: 'Android', cursice;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+background-color: var(--cor0);
+font-family: var(--fonte-padrao);
+
+}
+header {
+    background-image: linear-gradient(to bottom, black, var(--cor0));
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+
+header > h1 {
+color: var(--cor4);
+text-align: center;
+font-family: var(--fonte-destaque);
+font-size: 3em;
+font-weight: normal;
+margin-bottom: 20px;
+
+}
+
+header > p {
+    color: var(--cor4);
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    max-width: 890px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(128, 128, 128, 0.205);
+}
+
+nav {
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.473);
+}
+
+nav > a {
+    color: var(--cor4);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    
+}
+nav > a:hover {
+    background-color: var(--cor0) ;
+    color: var(--cor4) ;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--cor4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+}
+
+main a {
+    text-decoration: underline;
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+main a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-radius: 4px;
+}
+
+main  h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+main  h2 {
+
+    font-family: var(--fonte-destaque);
+    color: var(--cor0);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    text-indent: 8px;
+}
+
+
+
+main  p  {
+    margin: 15px;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    text-align: left;
+
+    line-height: 1em;
+
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor0);
+    color: var(--cor4);
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer  a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+}
